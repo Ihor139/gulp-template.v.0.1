@@ -1,19 +1,41 @@
-# Gulp стартовый шаблон pug, scss
+# Gulp start template pug, scss
 
-## Требования
+## Requirements
 
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
 - [gulp](https://gulpjs.com/)
 - [git](https://git-scm.com/)
 
-## Установка
+## Installation
 
-1. Установить зависимости — npm i
-2. Запустить сервер разработки — npm run dev
+1. Install dependencies - npm i
+2. Run the development server - npm run dev
 
-## Команды
+## Commands
 
-- `npm run dev` - запуск сервера разработки
-- `npm run build:dev` - сборка без запуска сервера разработки и без оптимизации
-- `npm run build:dev` - полная сборка без запуска сервера разработки
+- `npm run dev` - start development server
+- `npm run build:dev` - build without launching the development server and without optimization
+- `npm run build:dev` - full build without starting development server
+
+
+# Gulp стартовий шаблон pug, scss
+
+## Вимоги
+
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [gulp](https://gulpjs.com/)
+- [git](https://git-scm.com/)
+
+## Встановлення
+
+1. Встановити залежності - npm i
+2. Запустити сервер розробки - npm run dev
+
+## Команди
+
+- `npm run dev` - запуск сервера розробки
+- `npm run build:dev` - складання без запуску сервера розробки та без оптимізації
+- `npm run build:dev` - повне складання без запуску сервера розробки
+
