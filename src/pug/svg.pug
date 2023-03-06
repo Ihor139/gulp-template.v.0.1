@@ -1,0 +1,19 @@
+extends ./layouts/main.layout.pug
+
+block variables
+  - const bodyClass = 'page-home'
+  - const pageTitle = 'Gulp Template'
+
+block content
+
+  - const iconsMono = ['arrow-down', 'arrow-left', 'arrow-right', 'close', 'like']
+  - const iconsMulti = ['drill', 'cloud-wifi', 'cloud-computer']
+
+  - for (let i = 0; i < iconsMono.length; i++)
+    svg
+      use(xlink:href="../../static/sprites/sprite-mono.svg#" + iconsMono[i])
+
+
+  - for (let i = 0; i < iconsMulti.length; i++)
+    svg
+      use(xlink:href="../../static/sprites/sprite-multi.svg#" + iconsMulti[i])
