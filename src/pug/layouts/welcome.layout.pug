@@ -1,0 +1,32 @@
+include ../data/config.pug
+include ../components/**/*.pug
+
+block variables
+
+doctype html
+html(lang="uk")
+  head
+    block head
+      include ./head/head.layout.pug
+      include ./styles/styles.layout.pug
+    block styles
+    style.
+      .page__content{
+        padding: 0 20px
+      }
+      ol li:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+  body(class="page " + bodyClass)
+    .page__wrapper
+      block header
+        //- include ./header/header.layout.pug
+
+      main.page__content
+        block content
+
+      block footer
+        //- include ./footer/footer.layout.pug
+
+      script(src="./js/main.min.js" defer)

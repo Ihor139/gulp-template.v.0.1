@@ -1,0 +1,17 @@
+@import './helpers/_help';
+
+h1 {
+  font-size: 24px;
+  color: rgb(246, 250, 0);
+}
+
+body {
+  background-color: rgba($color: #1f419e, $alpha: 0.5);
+}
+.page__content {
+  padding: 15px;
+}
+
+h2 {
+  color: #fff;
+}

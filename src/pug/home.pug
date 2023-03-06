@@ -1,0 +1,14 @@
+extends ./layouts/main.layout.pug
+
+block variables
+  - const bodyClass = 'page-home'
+  - const pageTitle = 'Home'
+
+block styles
+  link(rel="stylesheet" href="./css/home.min.css")
+
+block scripts
+  script(src="./js/home.min.js" defer)
+
+block content
+  include ./content/home/main.pug

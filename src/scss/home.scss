@@ -1,0 +1,17 @@
+@import './helpers/_help';
+
+h1 {
+  font-size: 48px;
+  color: aqua;
+}
+
+body {
+  background-color: rgb(123, 165, 132);
+  @include for-1024 {
+    background-color: rgb(40, 122, 58);
+  }
+}
+
+.page__content {
+  padding: 15px;
+}

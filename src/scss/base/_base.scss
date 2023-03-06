@@ -1,0 +1,66 @@
+@import 'normalize.css/normalize';
+
+@include focus-visible;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+
+  scroll-behavior: smooth;
+
+  font-size: 16px;
+
+  &.disable-scroll {
+    overflow: hidden;
+  }
+}
+
+body {
+  box-sizing: border-box;
+
+  height: 100%;
+  min-height: 100%;
+
+  font-family: $font-family-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+@each $heading, $font-size in $font-size-headings {
+  #{$heading} {
+    font-size: $font-size;
+    font-family: $font-family-secondary;
+  }
+}
+
+a {
+  color: rgb(233, 81, 10);
+}
+
+.desktop {
+  @media (max-width: 1100px) {
+    display: none !important;
+  }
+}
+
+.tablet {
+  @media (min-width: 1101px) {
+    display: none !important;
+  }
+}
+
+.mobile {
+  @media (min-width: 550px) {
+    display: none !important;
+  }
+}

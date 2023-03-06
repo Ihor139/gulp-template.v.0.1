@@ -1,0 +1,15 @@
+extends layouts/welcome.layout.pug
+
+block variables
+  - const bodyClass = "list-home"
+  - const pageTitle = "Home"
+
+block content
+  h1 Welcome to Site
+  //- p Нижче Ви бачите список сторінок створених з дизайну "Url to figma disign"
+  p Below you can see a list of pages created from the design "Url to figma disign
+  ol
+    li
+      a(href="/home.html") home
+    li
+      a(href="/about.html") about
